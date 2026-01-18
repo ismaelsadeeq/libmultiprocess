@@ -8,6 +8,7 @@
 #include <calculator.h>
 #include <memory>
 #include <printer.h>
+#include <analytics.h>
 
 class Init
 {
@@ -15,6 +16,7 @@ public:
     virtual ~Init() = default;
     virtual std::unique_ptr<Printer> makePrinter() { return nullptr; }
     virtual std::unique_ptr<Calculator> makeCalculator(std::unique_ptr<Printer> printer) { return nullptr; }
+    virtual std::unique_ptr<Analytics> makeAnalytics() { return nullptr; }
 };
 
 #endif // EXAMPLE_INIT_H

@@ -8,14 +8,17 @@ using Cxx = import "/capnp/c++.capnp";
 using Proxy = import "/mp/proxy.capnp";
 using Calculator = import "calculator.capnp";
 using Printer = import "printer.capnp";
+using Analytics = import "analytics.capnp";
 
 $Proxy.include("calculator.h");
 $Proxy.include("init.h");
 $Proxy.include("printer.h");
+$Proxy.include("analytics.h");
 $Proxy.includeTypes("types.h");
 
 interface InitInterface $Proxy.wrap("Init") {
     construct @0 (threadMap: Proxy.ThreadMap) -> (threadMap :Proxy.ThreadMap);
     makeCalculator @1 (context :Proxy.Context, print :Printer.PrinterInterface) -> (result :Calculator.CalculatorInterface);
     makePrinter @2 (context :Proxy.Context) -> (result :Printer.PrinterInterface);
+    makeAnalytics @3 (context: Proxy.Context) -> (result: Analytics.AnalyticsInterface);
 }
