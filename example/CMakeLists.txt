@@ -4,25 +4,32 @@
 
 include(${PROJECT_SOURCE_DIR}/cmake/TargetCapnpSources.cmake)
 
+add_executable(mpanalytics
+  analytics.cpp
+)
+target_capnp_sources(mpanalytics ${CMAKE_CURRENT_SOURCE_DIR} init.capnp analytics.capnp calculator.capnp printer.capnp)
+target_include_directories(mpanalytics PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(mpanalytics PRIVATE Threads::Threads)
+
 add_executable(mpcalculator
   calculator.cpp
 )
-target_capnp_sources(mpcalculator ${CMAKE_CURRENT_SOURCE_DIR} init.capnp calculator.capnp printer.capnp)
+target_capnp_sources(mpcalculator ${CMAKE_CURRENT_SOURCE_DIR} init.capnp analytics.capnp calculator.capnp printer.capnp)
 target_include_directories(mpcalculator PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(mpcalculator PRIVATE Threads::Threads)
 
 add_executable(mpprinter
   printer.cpp
 )
-target_capnp_sources(mpprinter ${CMAKE_CURRENT_SOURCE_DIR} init.capnp calculator.capnp printer.capnp)
+target_capnp_sources(mpprinter ${CMAKE_CURRENT_SOURCE_DIR} init.capnp analytics.capnp calculator.capnp printer.capnp)
 target_include_directories(mpprinter PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(mpprinter PRIVATE Threads::Threads)
 
 add_executable(mpexample
   example.cpp
 )
-target_capnp_sources(mpexample ${CMAKE_CURRENT_SOURCE_DIR} init.capnp calculator.capnp printer.capnp)
+target_capnp_sources(mpexample ${CMAKE_CURRENT_SOURCE_DIR} init.capnp analytics.capnp calculator.capnp printer.capnp)
 target_include_directories(mpexample PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(mpexample PRIVATE Threads::Threads)
 
-add_custom_target(mpexamples DEPENDS mpexample mpcalculator mpprinter)
+add_custom_target(mpexamples DEPENDS mpexample mpanalytics mpcalculator mpprinter)

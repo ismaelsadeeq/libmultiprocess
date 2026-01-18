@@ -41,6 +41,27 @@ static void LogPrint(mp::LogMessage log_data)
     std::ofstream("debug.log", std::ios_base::app) << log_data.message << std::endl;
 }
 
+void printSnapshot(const AnalyticsSnapShot& snapshot) {
+    std::cout << "\n=== System Snapshot at " << snapshot.timestamp << " ===\n";
+    std::cout << "CPU Usage: " << std::fixed << std::setprecision(2) 
+               << snapshot.cpuUsagePercent << "%\n";
+    std::cout << "Total Processes: " << snapshot.processCount << "\n";
+    std::cout << "Memory:\n";
+    std::cout << "  Total:     " << snapshot.totalMemoryMB << " MB\n";
+    std::cout << "  Used:      " << snapshot.usedMemoryMB << " MB\n";
+    std::cout << "  Available: " << snapshot.availableMemoryMB << " MB\n";
+    std::cout << "  Cached:    " << snapshot.cachedMemoryMB << " MB\n";
+    std::cout << "  Buffers:   " << snapshot.buffersMemoryMB << " MB\n";
+     
+    std::cout << "\nTop Processes by Memory:\n";
+    for (const auto& proc : snapshot.topProcesses) {
+        std::cout << "  " << std::setw(6) << proc.pid << " | " 
+                  << std::setw(30) << std::left << proc.name << " | "
+            << std::setw(10) << std::right << proc.memoryKB << " KB\n";
+    }
+}
+
+
 int main(int argc, char** argv)
 {
     if (argc != 1) {
@@ -58,7 +79,10 @@ int main(int argc, char** argv)
 
     auto [printer_init, printer_pid] = Spawn(*loop, argv[0], "mpprinter");
     auto [calc_init, calc_pid] = Spawn(*loop, argv[0], "mpcalculator");
+    auto [anal_init, anal_pid] = Spawn(*loop, argv[0], "mpanalytics");
     auto calc = calc_init->makeCalculator(printer_init->makePrinter());
+    auto anal = anal_init->makeAnalytics();
+
     while (true) {
         std::string eqn;
         std::cout << "Enter the equation, or \"exit\" to quit: ";
@@ -66,11 +90,23 @@ int main(int argc, char** argv)
         if (eqn == "exit") break;
         calc->solveEquation(eqn);
     }
+    while (true) {
+        std::string st;
+        std::cout << "Get the device analytics y/n: ";
+        std::getline(std::cin, st);
+        if (st == "n") break;
+        AnalyticsSnapShot current_analytics = anal->getAnalytics();
+        printSnapshot(current_analytics);
+    }
+
     calc.reset();
     calc_init.reset();
     mp::WaitProcess(calc_pid);
     printer_init.reset();
     mp::WaitProcess(printer_pid);
+    anal.reset();
+    anal_init.reset();
+    mp::WaitProcess(anal_pid);
     loop_thread.join();
     std::cout << "Bye!" << std::endl;
     return 0;
