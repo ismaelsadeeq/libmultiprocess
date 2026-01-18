@@ -212,7 +212,6 @@ private:
             
             snapshot.topProcesses = getTopProcesses(10);
             snapshot.processCount = getProcessCount();
-            printSnapshot(snapshot);
 
             {
                 std::lock_guard<std::mutex> lock(dataMutex);
@@ -222,27 +221,7 @@ private:
 
             std::this_thread::sleep_for(std::chrono::seconds(collectionIntervalSeconds));
         }
-    }
-    void printSnapshot(const AnalyticsSnapShot& snapshot) {
-        std::cout << "\n=== System Snapshot at " << snapshot.timestamp << " ===\n";
-        std::cout << "CPU Usage: " << std::fixed << std::setprecision(2) 
-                  << snapshot.cpuUsagePercent << "%\n";
-        std::cout << "Total Processes: " << snapshot.processCount << "\n";
-        std::cout << "Memory:\n";
-        std::cout << "  Total:     " << snapshot.totalMemoryMB << " MB\n";
-        std::cout << "  Used:      " << snapshot.usedMemoryMB << " MB\n";
-        std::cout << "  Available: " << snapshot.availableMemoryMB << " MB\n";
-        std::cout << "  Cached:    " << snapshot.cachedMemoryMB << " MB\n";
-        std::cout << "  Buffers:   " << snapshot.buffersMemoryMB << " MB\n";
-        
-        std::cout << "\nTop Processes by Memory:\n";
-        for (const auto& proc : snapshot.topProcesses) {
-            std::cout << "  " << std::setw(6) << proc.pid << " | " 
-                      << std::setw(30) << std::left << proc.name << " | "
-                      << std::setw(10) << std::right << proc.memoryKB << " KB\n";
-        }
-    }
-
+    } 
 
 public:
     SystemMonitor(int intervalSeconds = 5) : collectionIntervalSeconds(intervalSeconds) {}
@@ -271,7 +250,7 @@ public:
         
         snapshot.topProcesses = getTopProcesses(10);
         snapshot.processCount = getProcessCount();
-        
+ 
         return snapshot;
     }
 
@@ -335,7 +314,7 @@ int main(int argc, char** argv)
     }
     try {
         std::cout << "Using the analytics server.\n";
-        mp::EventLoop loop("mpprinter", LogPrint);
+        mp::EventLoop loop("mpanalytics", LogPrint);
         std::unique_ptr<Init> init = std::make_unique<InitImpl>();
         mp::ServeStream<InitInterface>(loop, fd, *init);
         loop.loop();

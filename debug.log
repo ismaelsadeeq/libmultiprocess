@@ -1,0 +1,375 @@
+{mpexample-910117/mpexample-910117} IPC client first request from current thread, constructing waiter
+{mpexample-910117/mpexample-910117} IPC client send InitInterface.construct$Params
+send data: (threadMap = <external capability>)
+{mpprinter-910119/mpprinter-910119} IPC server recv request  #1 InitInterface.construct$Params
+{mpprinter-910119/mpprinter-910119} request data: (threadMap = <external capability>)
+{mpprinter-910119/mpprinter-910119} IPC server send response #1 InitInterface.construct$Results
+{mpprinter-910119/mpprinter-910119} response data: (threadMap = <external capability>)
+{mpexample-910117/mpexample-910117} IPC client recv InitInterface.construct$Results
+recv data: (threadMap = <external capability>)
+{mpexample-910117/mpexample-910117} IPC client send InitInterface.construct$Params
+send data: (threadMap = <external capability>)
+{mpcalculator-910120/mpcalculator-910120} IPC server recv request  #1 InitInterface.construct$Params
+{mpcalculator-910120/mpcalculator-910120} request data: (threadMap = <external capability>)
+{mpcalculator-910120/mpcalculator-910120} IPC server send response #1 InitInterface.construct$Results
+{mpcalculator-910120/mpcalculator-910120} response data: (threadMap = <external capability>)
+{mpexample-910117/mpexample-910117} IPC client recv InitInterface.construct$Results
+recv data: (threadMap = <external capability>)
+{mpexample-910117/mpexample-910117} IPC client send InitInterface.construct$Params
+send data: (threadMap = <external capability>)
+{mpanalytics-910121/mpanalytics-910121} IPC server recv request  #1 InitInterface.construct$Params
+{mpanalytics-910121/mpanalytics-910121} request data: (threadMap = <external capability>)
+{mpanalytics-910121/mpanalytics-910121} IPC server send response #1 InitInterface.construct$Results
+{mpanalytics-910121/mpanalytics-910121} response data: (threadMap = <external capability>)
+{mpexample-910117/mpexample-910117} IPC client recv InitInterface.construct$Results
+recv data: (threadMap = <external capability>)
+{mpexample-910117/mpexample-910117} IPC client send InitInterface.makePrinter$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpprinter-910119/mpprinter-910119} IPC server recv request  #2 InitInterface.makePrinter$Params
+{mpprinter-910119/mpprinter-910119} request data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpprinter-910119/mpprinter-910119} IPC server post request  #2 {mpprinter-910119/mpprinter-910122 (from mpexample-910117/mpexample-910117)}
+{mpprinter-910119/mpprinter-910119} IPC server send response #2 InitInterface.makePrinter$Results
+{mpprinter-910119/mpprinter-910119} response data: (result = <external capability>)
+{mpexample-910117/mpexample-910117} IPC client recv InitInterface.makePrinter$Results
+recv data: (result = <external capability>)
+{mpexample-910117/mpexample-910117} IPC client send InitInterface.makeCalculator$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>), print = <external capability>)
+{mpcalculator-910120/mpcalculator-910120} IPC server recv request  #2 InitInterface.makeCalculator$Params
+{mpcalculator-910120/mpcalculator-910120} request data: (context = (thread = <external capability>, callbackThread = <external capability>), print = <external capability>)
+{mpcalculator-910120/mpcalculator-910120} IPC server post request  #2 {mpcalculator-910120/mpcalculator-910123 (from mpexample-910117/mpexample-910117)}
+{mpcalculator-910120/mpcalculator-910120} IPC server send response #2 InitInterface.makeCalculator$Results
+{mpcalculator-910120/mpcalculator-910120} response data: (result = <external capability>)
+{mpexample-910117/mpexample-910117} IPC client recv InitInterface.makeCalculator$Results
+recv data: (result = <external capability>)
+{mpexample-910117/mpexample-910117} IPC client send InitInterface.makeAnalytics$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-910121/mpanalytics-910121} IPC server recv request  #2 InitInterface.makeAnalytics$Params
+{mpanalytics-910121/mpanalytics-910121} request data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-910121/mpanalytics-910121} IPC server post request  #2 {mpanalytics-910121/mpanalytics-910124 (from mpexample-910117/mpexample-910117)}
+{mpanalytics-910121/mpanalytics-910121} IPC server send response #2 InitInterface.makeAnalytics$Results
+{mpanalytics-910121/mpanalytics-910121} response data: (result = <external capability>)
+{mpexample-910117/mpexample-910117} IPC client recv InitInterface.makeAnalytics$Results
+recv data: (result = <external capability>)
+{mpexample-910720/mpexample-910720} IPC client first request from current thread, constructing waiter
+{mpexample-910720/mpexample-910720} IPC client send InitInterface.construct$Params
+send data: (threadMap = <external capability>)
+{mpprinter-910722/mpprinter-910722} IPC server recv request  #1 InitInterface.construct$Params
+{mpprinter-910722/mpprinter-910722} request data: (threadMap = <external capability>)
+{mpprinter-910722/mpprinter-910722} IPC server send response #1 InitInterface.construct$Results
+{mpprinter-910722/mpprinter-910722} response data: (threadMap = <external capability>)
+{mpexample-910720/mpexample-910720} IPC client recv InitInterface.construct$Results
+recv data: (threadMap = <external capability>)
+{mpexample-910720/mpexample-910720} IPC client send InitInterface.construct$Params
+send data: (threadMap = <external capability>)
+{mpcalculator-910723/mpcalculator-910723} IPC server recv request  #1 InitInterface.construct$Params
+{mpcalculator-910723/mpcalculator-910723} request data: (threadMap = <external capability>)
+{mpcalculator-910723/mpcalculator-910723} IPC server send response #1 InitInterface.construct$Results
+{mpcalculator-910723/mpcalculator-910723} response data: (threadMap = <external capability>)
+{mpexample-910720/mpexample-910720} IPC client recv InitInterface.construct$Results
+recv data: (threadMap = <external capability>)
+{mpexample-910720/mpexample-910720} IPC client send InitInterface.construct$Params
+send data: (threadMap = <external capability>)
+{mpanalytics-910724/mpanalytics-910724} IPC server recv request  #1 InitInterface.construct$Params
+{mpanalytics-910724/mpanalytics-910724} request data: (threadMap = <external capability>)
+{mpanalytics-910724/mpanalytics-910724} IPC server send response #1 InitInterface.construct$Results
+{mpanalytics-910724/mpanalytics-910724} response data: (threadMap = <external capability>)
+{mpexample-910720/mpexample-910720} IPC client recv InitInterface.construct$Results
+recv data: (threadMap = <external capability>)
+{mpexample-910720/mpexample-910720} IPC client send InitInterface.makePrinter$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpprinter-910722/mpprinter-910722} IPC server recv request  #2 InitInterface.makePrinter$Params
+{mpprinter-910722/mpprinter-910722} request data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpprinter-910722/mpprinter-910722} IPC server post request  #2 {mpprinter-910722/mpprinter-910725 (from mpexample-910720/mpexample-910720)}
+{mpprinter-910722/mpprinter-910722} IPC server send response #2 InitInterface.makePrinter$Results
+{mpprinter-910722/mpprinter-910722} response data: (result = <external capability>)
+{mpexample-910720/mpexample-910720} IPC client recv InitInterface.makePrinter$Results
+recv data: (result = <external capability>)
+{mpexample-910720/mpexample-910720} IPC client send InitInterface.makeCalculator$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>), print = <external capability>)
+{mpcalculator-910723/mpcalculator-910723} IPC server recv request  #2 InitInterface.makeCalculator$Params
+{mpcalculator-910723/mpcalculator-910723} request data: (context = (thread = <external capability>, callbackThread = <external capability>), print = <external capability>)
+{mpcalculator-910723/mpcalculator-910723} IPC server post request  #2 {mpcalculator-910723/mpcalculator-910726 (from mpexample-910720/mpexample-910720)}
+{mpcalculator-910723/mpcalculator-910723} IPC server send response #2 InitInterface.makeCalculator$Results
+{mpcalculator-910723/mpcalculator-910723} response data: (result = <external capability>)
+{mpexample-910720/mpexample-910720} IPC client recv InitInterface.makeCalculator$Results
+recv data: (result = <external capability>)
+{mpexample-910720/mpexample-910720} IPC client send InitInterface.makeAnalytics$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-910724/mpanalytics-910724} IPC server recv request  #2 InitInterface.makeAnalytics$Params
+{mpanalytics-910724/mpanalytics-910724} request data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-910724/mpanalytics-910724} IPC server post request  #2 {mpanalytics-910724/mpanalytics-910727 (from mpexample-910720/mpexample-910720)}
+{mpanalytics-910724/mpanalytics-910724} IPC server send response #2 InitInterface.makeAnalytics$Results
+{mpanalytics-910724/mpanalytics-910724} response data: (result = <external capability>)
+{mpexample-910720/mpexample-910720} IPC client recv InitInterface.makeAnalytics$Results
+recv data: (result = <external capability>)
+{mpexample-910720/mpexample-910720} IPC client send AnalyticsInterface.getAnalytics$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-910724/mpanalytics-910724} IPC server recv request  #3 AnalyticsInterface.getAnalytics$Params
+{mpanalytics-910724/mpanalytics-910724} request data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-910724/mpanalytics-910724} IPC server post request  #3 {mpanalytics-910724/mpanalytics-910727 (from mpexample-910720/mpexample-910720)}
+{mpanalytics-910724/mpanalytics-910724} IPC server send response #3 AnalyticsInterface.getAnalytics$Results
+{mpanalytics-910724/mpanalytics-910724} response data: (result = (timestamp = "2026-01-18 14:41:49", cpuUsagePercent = 7.702164009111617, totalMemoryMB = 63408, availableMemoryMB = 2307, usedMemoryMB = 9166, cachedMemoryMB = 50123, buffersMemoryMB = 1812, ...
+{mpexample-910720/mpexample-910720} IPC client recv AnalyticsInterface.getAnalytics$Results
+recv data: (result = (timestamp = "2026-01-18 14:41:49", cpuUsagePercent = 7.702164009111617, totalMemoryMB = 63408, availableMemoryMB = 2307, usedMemoryMB = 9166, cachedMemoryMB = 50123, buffersMemoryMB = 1812, ...
+{mpexample-910720/mpexample-910720} IPC client destroy N2mp11ProxyClientI19CalculatorInterfaceEE
+{mpexample-910720/mpexample-910720} IPC client send CalculatorInterface.destroy$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpcalculator-910723/mpcalculator-910723} IPC server recv request  #3 CalculatorInterface.destroy$Params
+{mpcalculator-910723/mpcalculator-910723} request data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpcalculator-910723/mpcalculator-910723} IPC server post request  #3 {mpcalculator-910723/mpcalculator-910726 (from mpexample-910720/mpexample-910720)}
+{mpcalculator-910723/mpcalculator-910726 (from mpexample-910720/mpexample-910720)} IPC client destroy N2mp11ProxyClientI16PrinterInterfaceEE
+{mpcalculator-910723/mpcalculator-910726 (from mpexample-910720/mpexample-910720)} IPC client send PrinterInterface.destroy$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpexample-910720/mpexample-910721} IPC server recv request  #1 PrinterInterface.destroy$Params
+{mpexample-910720/mpexample-910721} request data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpexample-910720/mpexample-910721} IPC server post request  #1 {mpexample-910720/mpexample-910720}
+{mpexample-910720/mpexample-910720} IPC client destroy N2mp11ProxyClientI16PrinterInterfaceEE
+{mpexample-910720/mpexample-910720} IPC client send PrinterInterface.destroy$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpprinter-910722/mpprinter-910722} IPC server recv request  #3 PrinterInterface.destroy$Params
+{mpprinter-910722/mpprinter-910722} request data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpprinter-910722/mpprinter-910722} IPC server post request  #3 {mpprinter-910722/mpprinter-910725 (from mpexample-910720/mpexample-910720)}
+{mpprinter-910722/mpprinter-910722} IPC server send response #3 PrinterInterface.destroy$Results
+{mpprinter-910722/mpprinter-910722} response data: ()
+{mpexample-910720/mpexample-910720} IPC client recv PrinterInterface.destroy$Results
+recv data: ()
+{mpprinter-910722/mpprinter-910722} IPC server destroy N2mp11ProxyServerI16PrinterInterfaceEE
+{mpexample-910720/mpexample-910721} IPC server send response #1 PrinterInterface.destroy$Results
+{mpexample-910720/mpexample-910721} response data: ()
+{mpcalculator-910723/mpcalculator-910726 (from mpexample-910720/mpexample-910720)} IPC client recv PrinterInterface.destroy$Results
+recv data: ()
+{mpexample-910720/mpexample-910721} IPC server destroy N2mp11ProxyServerI16PrinterInterfaceEE
+{mpcalculator-910723/mpcalculator-910723} IPC server send response #3 CalculatorInterface.destroy$Results
+{mpcalculator-910723/mpcalculator-910723} response data: ()
+{mpexample-910720/mpexample-910720} IPC client recv CalculatorInterface.destroy$Results
+recv data: ()
+{mpexample-910720/mpexample-910720} IPC client destroy N2mp11ProxyClientI13InitInterfaceEE
+{mpcalculator-910723/mpcalculator-910723} IPC server destroy N2mp11ProxyServerI19CalculatorInterfaceEE
+{mpcalculator-910723/mpcalculator-910723} IPC server: socket disconnected.
+{mpcalculator-910723/mpcalculator-910723} IPC server destroy N2mp11ProxyServerI13InitInterfaceEE
+{mpcalculator-910723/mpcalculator-910723} EventLoop::loop done, cancelling event listeners.
+{mpcalculator-910723/mpcalculator-910723} EventLoop::loop bye.
+{mpexample-910720/mpexample-910720} IPC client destroy N2mp11ProxyClientI13InitInterfaceEE
+{mpprinter-910722/mpprinter-910722} IPC server: socket disconnected.
+{mpprinter-910722/mpprinter-910722} IPC server destroy N2mp11ProxyServerI13InitInterfaceEE
+{mpprinter-910722/mpprinter-910722} EventLoop::loop done, cancelling event listeners.
+{mpprinter-910722/mpprinter-910722} EventLoop::loop bye.
+{mpexample-910720/mpexample-910720} IPC client destroy N2mp11ProxyClientIN9analytics5capnp18AnalyticsInterfaceEEE
+{mpexample-910720/mpexample-910720} IPC client destroy N2mp11ProxyClientI13InitInterfaceEE
+{mpexample-910720/mpexample-910721} EventLoop::loop done, cancelling event listeners.
+{mpexample-910720/mpexample-910721} EventLoop::loop bye.
+{mpanalytics-910724/mpanalytics-910724} IPC server destroy N2mp11ProxyServerIN9analytics5capnp18AnalyticsInterfaceEEE
+{mpanalytics-910724/mpanalytics-910724} IPC server: socket disconnected.
+{mpanalytics-910724/mpanalytics-910724} IPC server destroy N2mp11ProxyServerI13InitInterfaceEE
+{mpanalytics-910724/mpanalytics-910724} EventLoop::loop done, cancelling event listeners.
+{mpanalytics-910724/mpanalytics-910724} EventLoop::loop bye.
+{mpexample-911521/mpexample-911521} IPC client first request from current thread, constructing waiter
+{mpexample-911521/mpexample-911521} IPC client send InitInterface.construct$Params
+send data: (threadMap = <external capability>)
+{mpprinter-911523/mpprinter-911523} IPC server recv request  #1 InitInterface.construct$Params
+{mpprinter-911523/mpprinter-911523} request data: (threadMap = <external capability>)
+{mpprinter-911523/mpprinter-911523} IPC server send response #1 InitInterface.construct$Results
+{mpprinter-911523/mpprinter-911523} response data: (threadMap = <external capability>)
+{mpexample-911521/mpexample-911521} IPC client recv InitInterface.construct$Results
+recv data: (threadMap = <external capability>)
+{mpexample-911521/mpexample-911521} IPC client send InitInterface.construct$Params
+send data: (threadMap = <external capability>)
+{mpcalculator-911524/mpcalculator-911524} IPC server recv request  #1 InitInterface.construct$Params
+{mpcalculator-911524/mpcalculator-911524} request data: (threadMap = <external capability>)
+{mpcalculator-911524/mpcalculator-911524} IPC server send response #1 InitInterface.construct$Results
+{mpcalculator-911524/mpcalculator-911524} response data: (threadMap = <external capability>)
+{mpexample-911521/mpexample-911521} IPC client recv InitInterface.construct$Results
+recv data: (threadMap = <external capability>)
+{mpexample-911521/mpexample-911521} IPC client send InitInterface.construct$Params
+send data: (threadMap = <external capability>)
+{mpanalytics-911525/mpanalytics-911525} IPC server recv request  #1 InitInterface.construct$Params
+{mpanalytics-911525/mpanalytics-911525} request data: (threadMap = <external capability>)
+{mpanalytics-911525/mpanalytics-911525} IPC server send response #1 InitInterface.construct$Results
+{mpanalytics-911525/mpanalytics-911525} response data: (threadMap = <external capability>)
+{mpexample-911521/mpexample-911521} IPC client recv InitInterface.construct$Results
+recv data: (threadMap = <external capability>)
+{mpexample-911521/mpexample-911521} IPC client send InitInterface.makePrinter$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpprinter-911523/mpprinter-911523} IPC server recv request  #2 InitInterface.makePrinter$Params
+{mpprinter-911523/mpprinter-911523} request data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpprinter-911523/mpprinter-911523} IPC server post request  #2 {mpprinter-911523/mpprinter-911526 (from mpexample-911521/mpexample-911521)}
+{mpprinter-911523/mpprinter-911523} IPC server send response #2 InitInterface.makePrinter$Results
+{mpprinter-911523/mpprinter-911523} response data: (result = <external capability>)
+{mpexample-911521/mpexample-911521} IPC client recv InitInterface.makePrinter$Results
+recv data: (result = <external capability>)
+{mpexample-911521/mpexample-911521} IPC client send InitInterface.makeCalculator$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>), print = <external capability>)
+{mpcalculator-911524/mpcalculator-911524} IPC server recv request  #2 InitInterface.makeCalculator$Params
+{mpcalculator-911524/mpcalculator-911524} request data: (context = (thread = <external capability>, callbackThread = <external capability>), print = <external capability>)
+{mpcalculator-911524/mpcalculator-911524} IPC server post request  #2 {mpcalculator-911524/mpcalculator-911527 (from mpexample-911521/mpexample-911521)}
+{mpcalculator-911524/mpcalculator-911524} IPC server send response #2 InitInterface.makeCalculator$Results
+{mpcalculator-911524/mpcalculator-911524} response data: (result = <external capability>)
+{mpexample-911521/mpexample-911521} IPC client recv InitInterface.makeCalculator$Results
+recv data: (result = <external capability>)
+{mpexample-911521/mpexample-911521} IPC client send InitInterface.makeAnalytics$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-911525/mpanalytics-911525} IPC server recv request  #2 InitInterface.makeAnalytics$Params
+{mpanalytics-911525/mpanalytics-911525} request data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-911525/mpanalytics-911525} IPC server post request  #2 {mpanalytics-911525/mpanalytics-911528 (from mpexample-911521/mpexample-911521)}
+{mpanalytics-911525/mpanalytics-911525} IPC server send response #2 InitInterface.makeAnalytics$Results
+{mpanalytics-911525/mpanalytics-911525} response data: (result = <external capability>)
+{mpexample-911521/mpexample-911521} IPC client recv InitInterface.makeAnalytics$Results
+recv data: (result = <external capability>)
+{mpexample-911521/mpexample-911521} IPC client send AnalyticsInterface.getAnalytics$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-911525/mpanalytics-911525} IPC server recv request  #3 AnalyticsInterface.getAnalytics$Params
+{mpanalytics-911525/mpanalytics-911525} request data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-911525/mpanalytics-911525} IPC server post request  #3 {mpanalytics-911525/mpanalytics-911528 (from mpexample-911521/mpexample-911521)}
+{mpanalytics-911525/mpanalytics-911525} IPC server send response #3 AnalyticsInterface.getAnalytics$Results
+{mpanalytics-911525/mpanalytics-911525} response data: (result = (timestamp = "2026-01-18 14:46:28", cpuUsagePercent = 7.4769605286037208, totalMemoryMB = 63408, availableMemoryMB = 2277, usedMemoryMB = 9196, cachedMemoryMB = 50123, buffersMemoryMB = 1812,...
+{mpexample-911521/mpexample-911521} IPC client recv AnalyticsInterface.getAnalytics$Results
+recv data: (result = (timestamp = "2026-01-18 14:46:28", cpuUsagePercent = 7.4769605286037208, totalMemoryMB = 63408, availableMemoryMB = 2277, usedMemoryMB = 9196, cachedMemoryMB = 50123, buffersMemoryMB = 1812,...
+{mpexample-911521/mpexample-911521} IPC client send AnalyticsInterface.getAnalytics$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-911525/mpanalytics-911525} IPC server recv request  #4 AnalyticsInterface.getAnalytics$Params
+{mpanalytics-911525/mpanalytics-911525} request data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-911525/mpanalytics-911525} IPC server post request  #4 {mpanalytics-911525/mpanalytics-911528 (from mpexample-911521/mpexample-911521)}
+{mpanalytics-911525/mpanalytics-911525} IPC server send response #4 AnalyticsInterface.getAnalytics$Results
+{mpanalytics-911525/mpanalytics-911525} response data: (result = (timestamp = "2026-01-18 14:46:32", cpuUsagePercent = 7.695060844667144, totalMemoryMB = 63408, availableMemoryMB = 2323, usedMemoryMB = 9150, cachedMemoryMB = 50123, buffersMemoryMB = 1812, ...
+{mpexample-911521/mpexample-911521} IPC client recv AnalyticsInterface.getAnalytics$Results
+recv data: (result = (timestamp = "2026-01-18 14:46:32", cpuUsagePercent = 7.695060844667144, totalMemoryMB = 63408, availableMemoryMB = 2323, usedMemoryMB = 9150, cachedMemoryMB = 50123, buffersMemoryMB = 1812, ...
+{mpexample-911521/mpexample-911521} IPC client send AnalyticsInterface.getAnalytics$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-911525/mpanalytics-911525} IPC server recv request  #5 AnalyticsInterface.getAnalytics$Params
+{mpanalytics-911525/mpanalytics-911525} request data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-911525/mpanalytics-911525} IPC server post request  #5 {mpanalytics-911525/mpanalytics-911528 (from mpexample-911521/mpexample-911521)}
+{mpanalytics-911525/mpanalytics-911525} IPC server send response #5 AnalyticsInterface.getAnalytics$Results
+{mpanalytics-911525/mpanalytics-911525} response data: (result = (timestamp = "2026-01-18 14:48:47", cpuUsagePercent = 7.6964047936085214, totalMemoryMB = 63408, availableMemoryMB = 2325, usedMemoryMB = 9146, cachedMemoryMB = 50125, buffersMemoryMB = 1812,...
+{mpexample-911521/mpexample-911521} IPC client recv AnalyticsInterface.getAnalytics$Results
+recv data: (result = (timestamp = "2026-01-18 14:48:47", cpuUsagePercent = 7.6964047936085214, totalMemoryMB = 63408, availableMemoryMB = 2325, usedMemoryMB = 9146, cachedMemoryMB = 50125, buffersMemoryMB = 1812,...
+{mpexample-911521/mpexample-911521} IPC client send AnalyticsInterface.getAnalytics$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-911525/mpanalytics-911525} IPC server recv request  #6 AnalyticsInterface.getAnalytics$Params
+{mpanalytics-911525/mpanalytics-911525} request data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-911525/mpanalytics-911525} IPC server post request  #6 {mpanalytics-911525/mpanalytics-911528 (from mpexample-911521/mpexample-911521)}
+{mpanalytics-911525/mpanalytics-911525} IPC server send response #6 AnalyticsInterface.getAnalytics$Results
+{mpanalytics-911525/mpanalytics-911525} response data: (result = (timestamp = "2026-01-18 14:48:48", cpuUsagePercent = 6.5656565656565666, totalMemoryMB = 63408, availableMemoryMB = 2344, usedMemoryMB = 9127, cachedMemoryMB = 50125, buffersMemoryMB = 1812,...
+{mpexample-911521/mpexample-911521} IPC client recv AnalyticsInterface.getAnalytics$Results
+recv data: (result = (timestamp = "2026-01-18 14:48:48", cpuUsagePercent = 6.5656565656565666, totalMemoryMB = 63408, availableMemoryMB = 2344, usedMemoryMB = 9127, cachedMemoryMB = 50125, buffersMemoryMB = 1812,...
+{mpexample-911521/mpexample-911521} IPC client destroy N2mp11ProxyClientI19CalculatorInterfaceEE
+{mpexample-911521/mpexample-911521} IPC client send CalculatorInterface.destroy$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpcalculator-911524/mpcalculator-911524} IPC server recv request  #3 CalculatorInterface.destroy$Params
+{mpcalculator-911524/mpcalculator-911524} request data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpcalculator-911524/mpcalculator-911524} IPC server post request  #3 {mpcalculator-911524/mpcalculator-911527 (from mpexample-911521/mpexample-911521)}
+{mpcalculator-911524/mpcalculator-911527 (from mpexample-911521/mpexample-911521)} IPC client destroy N2mp11ProxyClientI16PrinterInterfaceEE
+{mpcalculator-911524/mpcalculator-911527 (from mpexample-911521/mpexample-911521)} IPC client send PrinterInterface.destroy$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpexample-911521/mpexample-911522} IPC server recv request  #1 PrinterInterface.destroy$Params
+{mpexample-911521/mpexample-911522} request data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpexample-911521/mpexample-911522} IPC server post request  #1 {mpexample-911521/mpexample-911521}
+{mpexample-911521/mpexample-911521} IPC client destroy N2mp11ProxyClientI16PrinterInterfaceEE
+{mpexample-911521/mpexample-911521} IPC client send PrinterInterface.destroy$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpprinter-911523/mpprinter-911523} IPC server recv request  #3 PrinterInterface.destroy$Params
+{mpprinter-911523/mpprinter-911523} request data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpprinter-911523/mpprinter-911523} IPC server post request  #3 {mpprinter-911523/mpprinter-911526 (from mpexample-911521/mpexample-911521)}
+{mpprinter-911523/mpprinter-911523} IPC server send response #3 PrinterInterface.destroy$Results
+{mpprinter-911523/mpprinter-911523} response data: ()
+{mpexample-911521/mpexample-911521} IPC client recv PrinterInterface.destroy$Results
+recv data: ()
+{mpprinter-911523/mpprinter-911523} IPC server destroy N2mp11ProxyServerI16PrinterInterfaceEE
+{mpexample-911521/mpexample-911522} IPC server send response #1 PrinterInterface.destroy$Results
+{mpexample-911521/mpexample-911522} response data: ()
+{mpcalculator-911524/mpcalculator-911527 (from mpexample-911521/mpexample-911521)} IPC client recv PrinterInterface.destroy$Results
+recv data: ()
+{mpexample-911521/mpexample-911522} IPC server destroy N2mp11ProxyServerI16PrinterInterfaceEE
+{mpcalculator-911524/mpcalculator-911524} IPC server send response #3 CalculatorInterface.destroy$Results
+{mpcalculator-911524/mpcalculator-911524} response data: ()
+{mpexample-911521/mpexample-911521} IPC client recv CalculatorInterface.destroy$Results
+recv data: ()
+{mpexample-911521/mpexample-911521} IPC client destroy N2mp11ProxyClientI13InitInterfaceEE
+{mpcalculator-911524/mpcalculator-911524} IPC server destroy N2mp11ProxyServerI19CalculatorInterfaceEE
+{mpcalculator-911524/mpcalculator-911524} IPC server: socket disconnected.
+{mpcalculator-911524/mpcalculator-911524} IPC server destroy N2mp11ProxyServerI13InitInterfaceEE
+{mpcalculator-911524/mpcalculator-911524} EventLoop::loop done, cancelling event listeners.
+{mpcalculator-911524/mpcalculator-911524} EventLoop::loop bye.
+{mpexample-911521/mpexample-911521} IPC client destroy N2mp11ProxyClientI13InitInterfaceEE
+{mpprinter-911523/mpprinter-911523} IPC server: socket disconnected.
+{mpprinter-911523/mpprinter-911523} IPC server destroy N2mp11ProxyServerI13InitInterfaceEE
+{mpprinter-911523/mpprinter-911523} EventLoop::loop done, cancelling event listeners.
+{mpprinter-911523/mpprinter-911523} EventLoop::loop bye.
+{mpexample-911521/mpexample-911521} IPC client destroy N2mp11ProxyClientIN9analytics5capnp18AnalyticsInterfaceEEE
+{mpexample-911521/mpexample-911521} IPC client destroy N2mp11ProxyClientI13InitInterfaceEE
+{mpexample-911521/mpexample-911522} EventLoop::loop done, cancelling event listeners.
+{mpexample-911521/mpexample-911522} EventLoop::loop bye.
+{mpanalytics-911525/mpanalytics-911525} IPC server destroy N2mp11ProxyServerIN9analytics5capnp18AnalyticsInterfaceEEE
+{mpanalytics-911525/mpanalytics-911525} IPC server: socket disconnected.
+{mpanalytics-911525/mpanalytics-911525} IPC server destroy N2mp11ProxyServerI13InitInterfaceEE
+{mpanalytics-911525/mpanalytics-911525} EventLoop::loop done, cancelling event listeners.
+{mpanalytics-911525/mpanalytics-911525} EventLoop::loop bye.
+{mpexample-912011/mpexample-912011} IPC client first request from current thread, constructing waiter
+{mpexample-912011/mpexample-912011} IPC client send InitInterface.construct$Params
+send data: (threadMap = <external capability>)
+{mpprinter-912013/mpprinter-912013} IPC server recv request  #1 InitInterface.construct$Params
+{mpprinter-912013/mpprinter-912013} request data: (threadMap = <external capability>)
+{mpprinter-912013/mpprinter-912013} IPC server send response #1 InitInterface.construct$Results
+{mpprinter-912013/mpprinter-912013} response data: (threadMap = <external capability>)
+{mpexample-912011/mpexample-912011} IPC client recv InitInterface.construct$Results
+recv data: (threadMap = <external capability>)
+{mpexample-912011/mpexample-912011} IPC client send InitInterface.construct$Params
+send data: (threadMap = <external capability>)
+{mpcalculator-912014/mpcalculator-912014} IPC server recv request  #1 InitInterface.construct$Params
+{mpcalculator-912014/mpcalculator-912014} request data: (threadMap = <external capability>)
+{mpcalculator-912014/mpcalculator-912014} IPC server send response #1 InitInterface.construct$Results
+{mpcalculator-912014/mpcalculator-912014} response data: (threadMap = <external capability>)
+{mpexample-912011/mpexample-912011} IPC client recv InitInterface.construct$Results
+recv data: (threadMap = <external capability>)
+{mpexample-912011/mpexample-912011} IPC client send InitInterface.construct$Params
+send data: (threadMap = <external capability>)
+{mpanalytics-912015/mpanalytics-912015} IPC server recv request  #1 InitInterface.construct$Params
+{mpanalytics-912015/mpanalytics-912015} request data: (threadMap = <external capability>)
+{mpanalytics-912015/mpanalytics-912015} IPC server send response #1 InitInterface.construct$Results
+{mpanalytics-912015/mpanalytics-912015} response data: (threadMap = <external capability>)
+{mpexample-912011/mpexample-912011} IPC client recv InitInterface.construct$Results
+recv data: (threadMap = <external capability>)
+{mpexample-912011/mpexample-912011} IPC client send InitInterface.makePrinter$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpprinter-912013/mpprinter-912013} IPC server recv request  #2 InitInterface.makePrinter$Params
+{mpprinter-912013/mpprinter-912013} request data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpprinter-912013/mpprinter-912013} IPC server post request  #2 {mpprinter-912013/mpprinter-912016 (from mpexample-912011/mpexample-912011)}
+{mpprinter-912013/mpprinter-912013} IPC server send response #2 InitInterface.makePrinter$Results
+{mpprinter-912013/mpprinter-912013} response data: (result = <external capability>)
+{mpexample-912011/mpexample-912011} IPC client recv InitInterface.makePrinter$Results
+recv data: (result = <external capability>)
+{mpexample-912011/mpexample-912011} IPC client send InitInterface.makeCalculator$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>), print = <external capability>)
+{mpcalculator-912014/mpcalculator-912014} IPC server recv request  #2 InitInterface.makeCalculator$Params
+{mpcalculator-912014/mpcalculator-912014} request data: (context = (thread = <external capability>, callbackThread = <external capability>), print = <external capability>)
+{mpcalculator-912014/mpcalculator-912014} IPC server post request  #2 {mpcalculator-912014/mpcalculator-912017 (from mpexample-912011/mpexample-912011)}
+{mpcalculator-912014/mpcalculator-912014} IPC server send response #2 InitInterface.makeCalculator$Results
+{mpcalculator-912014/mpcalculator-912014} response data: (result = <external capability>)
+{mpexample-912011/mpexample-912011} IPC client recv InitInterface.makeCalculator$Results
+recv data: (result = <external capability>)
+{mpexample-912011/mpexample-912011} IPC client send InitInterface.makeAnalytics$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-912015/mpanalytics-912015} IPC server recv request  #2 InitInterface.makeAnalytics$Params
+{mpanalytics-912015/mpanalytics-912015} request data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-912015/mpanalytics-912015} IPC server post request  #2 {mpanalytics-912015/mpanalytics-912018 (from mpexample-912011/mpexample-912011)}
+{mpanalytics-912015/mpanalytics-912015} IPC server send response #2 InitInterface.makeAnalytics$Results
+{mpanalytics-912015/mpanalytics-912015} response data: (result = <external capability>)
+{mpexample-912011/mpexample-912011} IPC client recv InitInterface.makeAnalytics$Results
+recv data: (result = <external capability>)
+{mpexample-912011/mpexample-912011} IPC client send AnalyticsInterface.getAnalytics$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-912015/mpanalytics-912015} IPC server recv request  #3 AnalyticsInterface.getAnalytics$Params
+{mpanalytics-912015/mpanalytics-912015} request data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-912015/mpanalytics-912015} IPC server post request  #3 {mpanalytics-912015/mpanalytics-912018 (from mpexample-912011/mpexample-912011)}
+{mpanalytics-912015/mpanalytics-912015} IPC server send response #3 AnalyticsInterface.getAnalytics$Results
+{mpanalytics-912015/mpanalytics-912015} response data: (result = (timestamp = "2026-01-18 14:49:25", cpuUsagePercent = 7.5867635189669089, totalMemoryMB = 63408, availableMemoryMB = 2314, usedMemoryMB = 9157, cachedMemoryMB = 50125, buffersMemoryMB = 1812,...
+{mpexample-912011/mpexample-912011} IPC client recv AnalyticsInterface.getAnalytics$Results
+recv data: (result = (timestamp = "2026-01-18 14:49:25", cpuUsagePercent = 7.5867635189669089, totalMemoryMB = 63408, availableMemoryMB = 2314, usedMemoryMB = 9157, cachedMemoryMB = 50125, buffersMemoryMB = 1812,...
+{mpexample-912011/mpexample-912011} IPC client send AnalyticsInterface.getAnalytics$Params
+send data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-912015/mpanalytics-912015} IPC server recv request  #4 AnalyticsInterface.getAnalytics$Params
+{mpanalytics-912015/mpanalytics-912015} request data: (context = (thread = <external capability>, callbackThread = <external capability>))
+{mpanalytics-912015/mpanalytics-912015} IPC server post request  #4 {mpanalytics-912015/mpanalytics-912018 (from mpexample-912011/mpexample-912011)}
+{mpanalytics-912015/mpanalytics-912015} IPC server send response #4 AnalyticsInterface.getAnalytics$Results
+{mpanalytics-912015/mpanalytics-912015} response data: (result = (timestamp = "2026-01-18 14:49:27", cpuUsagePercent = 7.399463806970509, totalMemoryMB = 63408, availableMemoryMB = 2316, usedMemoryMB = 9155, cachedMemoryMB = 50125, buffersMemoryMB = 1812, ...
+{mpexample-912011/mpexample-912011} IPC client recv AnalyticsInterface.getAnalytics$Results
+recv data: (result = (timestamp = "2026-01-18 14:49:27", cpuUsagePercent = 7.399463806970509, totalMemoryMB = 63408, availableMemoryMB = 2316, usedMemoryMB = 9155, cachedMemoryMB = 50125, buffersMemoryMB = 1812, ...
